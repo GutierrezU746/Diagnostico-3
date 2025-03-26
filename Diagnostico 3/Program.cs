@@ -30,24 +30,75 @@ namespace Diagnostico_3
                         Console.ReadKey();
                         break;
                     case "2":
-                       string [] canciones = new string[5];
+                       string [] canciones2 = new string[5];
                         for (int i = 0; i < 5; i++)
                         {
                             Console.WriteLine("Ingrese una cancion");
-                            canciones[i] = Console.ReadLine();
+                            canciones2[i] = Console.ReadLine();
                         }
                         for (int i = 0; i < 5; i++)
                         {
-                            Console.WriteLine(canciones[i]);
+                            Console.WriteLine(canciones2[i]);
                         }
                         Console.WriteLine();
                         Console.ReadKey();
                         break;
                     case "3":
+                        string[] Nombre = new string[5];
+                        int[] Edad = new int[5];
+                        int cont2 = 0;
+                        while (cont2 < 5)
+                        {
+                            Console.WriteLine("Ingrese un nombre");
+                            Nombre[cont2] = Console.ReadLine();
+                            Console.WriteLine("Ingrese una edad");
+                            Edad[cont2] = int.Parse(Console.ReadLine());
+                            cont2++;
+                        }
+                        Console.ReadKey();
                         break;
                     case "4":
+                        string[] Nombre2 = new string[5];
+                        int[] Edad2 = new int[5];
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.WriteLine("Ingrese un nombre");
+                            Nombre2[i] = Console.ReadLine();
+                            Console.WriteLine("Ingrese una edad");
+                            Edad2[i] = int.Parse(Console.ReadLine());
+                        }
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.WriteLine(Nombre2[i]+": " + Edad2[i]);
+                        }
+                        Console.WriteLine();
+                        Console.ReadKey();
                         break;
                     case "5":
+                        int[] Num1 = new int[5];
+                        int[] Num2 = new int[5];
+                        int[] Resultado = new int[5];
+                        for (int n = 0; n < 5; n++)
+                        {
+                            Console.WriteLine("Ingrese un numero");
+                            Num1[n] = int.Parse(Console.ReadLine());
+                        }
+                        for (int m = 0; m < 5; m++)
+                        {
+                            Console.WriteLine("Ingrese un numero");
+                            Num2[m] = int.Parse(Console.ReadLine());
+                        }
+                        for (int s = 0; s < 5; s++)
+                        {
+                           Resultado[s] = Num1[s] + Num2[s];
+                        }
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.WriteLine("Los resultados de las sumas son: ");
+                            Console.WriteLine(Resultado[i]);
+                        }
+                        Console.WriteLine();
+                        Console.ReadKey();
                         break;
                     default:
                         break;
